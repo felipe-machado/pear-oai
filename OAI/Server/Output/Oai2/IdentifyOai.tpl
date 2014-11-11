@@ -1,0 +1,10 @@
+      <oai-identifier 
+        xmlns="http://www.openarchives.org/OAI/2.0/oai-identifier"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai-identifier
+        http://www.openarchives.org/OAI/2.0/oai-identifier.xsd">
+        <scheme>{SCHEME}</scheme>
+        <repositoryIdentifier>{REPOSITORY_IDENTIFIER}</repositoryIdentifier>
+        <delimiter>{DELIMITER}</delimiter>
+        <sampleIdentifier>{SAMPLE_IDENTIFIER}</sampleIdentifier>
+      </oai-identifier>
