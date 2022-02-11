@@ -37,10 +37,10 @@ require_once 'config/phpconfig.php';
 ?>
 <html>
 <head>
-  <title>Meertens Institute Metadata Repository</title>
+  <title>PasaLaP&aacute;gina Metadata Repository</title>
 </head>
 <body>
-<h1>Meertens Institute Metadata Repository</h1>
+<h1>PasaLaP&aacute;gina Metadata Repository</h1>
 
 <h2>Identify</h2>
 

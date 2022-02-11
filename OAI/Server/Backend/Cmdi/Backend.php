@@ -512,6 +512,7 @@ class OAI_ServerBackendCmdi extends OAI_ServerBackend
 
       $response = '';
       while ($row = $res->fetchRow()) {
+
         $metadataRecord = $this->_escapeEntities($row, $args['metadataPrefix']);
 
         switch ($args['metadataPrefix']) {
@@ -595,7 +596,7 @@ class OAI_ServerBackendCmdi extends OAI_ServerBackend
 
     $retval = array();
     foreach ($record as $k => $v) {
-      $retval[$k] = htmlspecialchars($v, ENT_NOQUOTES);
+      $retval[$k] = htmlspecialchars($v, ENT_NOQUOTES, OAI_RESPONSE_DEFAULT_ENCODING);
     }
     return $retval;
   }

@@ -55,7 +55,7 @@ define('OAI_PACKAGE_VERSION', '0.4');
  *
  * @const string OAI_RESPONSE_DEFAULT_ENCODING
  */
-define('OAI_RESPONSE_DEFAULT_ENCODING', 'UTF-8');
+define('OAI_RESPONSE_DEFAULT_ENCODING', 'ISO-8859-1');
 /**
  * The OAI protocol version
  *

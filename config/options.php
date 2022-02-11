@@ -37,7 +37,7 @@
  */
 
 /**
- * The base URL of the script executing the OAI Server.
+ * The base URL of the script cmdiexecuting the OAI Server.
  *
  * Actually, this is the URL to the PHP script where you implemented
  * the OAI Server, e.g. like tests/oai_server.php in this package.
@@ -54,7 +54,7 @@ $options['base_url'] = '';
  * The name of our OAI repository
  */
 
-$options['repository_name'] = '';
+$options['repository_name'] = utf8_decode('Repositorio OAI PasaLaPágina');
 
 //	$options['repository_name'] = 'Repository Implemented with PHP using PEAR::OAI';
 
@@ -69,13 +69,13 @@ $options['scheme'] = 'oai';
  * Email of repository administrators.
  */
 //	$options['admin_emails'] = array('me@example.com', 'you@example.com', 'him@example.com');
-$options['admin_emails'] = array();
+$options['admin_emails'] = array('alex@pasalapagina.com', 'andres@pasalapagina.com', 'felipe@pasalapagina.com');
 
 /**
  * The earliest datastamp in your repository
  */
 // $options['earliest_datestamp'] = '2000-01-01T00:00:00Z';
-$options['earliest_datestamp'] = gmdate('Y-m-d\TH:i:s\Z', strtotime('2010-06-17 14:07:35'));
+$options['earliest_datestamp'] = gmdate('Y-m-d\TH:i:s\Z', strtotime('2009-09-04 00:00:00'));
 
 /**
  * How your repository handles deletions
@@ -96,7 +96,7 @@ $options['earliest_datestamp'] = gmdate('Y-m-d\TH:i:s\Z', strtotime('2010-06-17 
  * http://www.openarchives.org/OAI/openarchivesprotocol.html#deletion
  */
 //$options['deleted_record'] = 'transient';
-$options['deleted_record'] = 'no';
+$options['deleted_record'] = 'persistent';
 
 /**
  * Set the datestamp granularity of your repository.
@@ -106,7 +106,7 @@ $options['deleted_record'] = 'no';
  * Please consult for more information:
  * http://www.openarchives.org/OAI/openarchivesprotocol.html#Datestamp
  */
-$options['granularity'] = 'YYYY-MM-DDThh:mm:ssZ';
+$options['granularity'] = 'YYYY-MM-DD';
 
 /**
  * Delimiter of OAI identifier syntax
@@ -123,7 +123,7 @@ $options['delimiter'] = ':';
  * http://www.openarchives.org/OAI/openarchivesprotocol.html#Identify
  */
 // $options['repository_identifier'] = 'example.com';
-$options['repository_identifier'] = '';
+$options['repository_identifier'] = 'pasalapagina.com';
 
 /**
  * Specify if our repository works with masqueraded identifiers.

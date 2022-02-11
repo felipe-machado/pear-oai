@@ -32,5 +32,7 @@ $storage_options = array(
 $storage_options['templates_path'] = $storage_options['template_path'] = realpath('OAI/Server/Output/');
 
 // PEAR::DB DSN, see http://pear.php.net/manual/en/package.database.db.intro-dsn.php
-define('OAI_STORAGE_DSN', '');
-define('OAI_TOKENSTORAGE_DSN', '');
+define('OAI_STORAGE_DSN', 'mysqli://adminbdpprv:p1s1p3l0@plpdb01/plprv_prod');
+
+
+define('OAI_TOKENSTORAGE_DSN', 'mysqli://adminbdpprv:p1s1p3l0@plpdb01/plprv_prod');
